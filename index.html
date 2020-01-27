@@ -4,9 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <button>Download</button>
+   <button class="save">save</button>
+   <script>
+       $('.save').on('click', function(){
+        var link = document.createElement('a');
+        link.setAttribute('href', 'https://cs.pikabu.ru/post_img/big/2013/06/15/11/1371321270_1294283116.jpg');
+        link.setAttribute('download', 'download.png');
+        link.click();
+        return false;
+       });
+   </script>
 </body>
 </html>
