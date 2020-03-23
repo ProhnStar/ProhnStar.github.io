@@ -2,21 +2,92 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Новый стиль - наращивание ресниц</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <title>Document</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<script>
+$(document).ready(function(){
+    $(".menu_button").click(function(){
+            $(".menu").slideToggle("slow");
+        });
+});
+</script>
 </head>
 <body>
-   <button class="save">save</button>
-   <script>
-       $('.save').on('click', function(){
-        var link = document.createElement('a');
-        link.setAttribute('href', 'https://cs.pikabu.ru/post_img/big/2013/06/15/11/1371321270_1294283116.jpg');
-        link.setAttribute('download', 'download.png');
-        link.click();
-        return false;
-       });
-   </script>
+    <div class="wrapper">
+        <div class="navbar">
+            <a href="index.html" class="top_title">Katerina Lashes</a>
+            <button class="menu_button">=</button>
+        </div>
+        <div class="menu">
+            <ul class="menu_list">
+                <li class="menu_item">Почему мы</li>
+                <li class="menu_item">Портфолио</li>
+                <li class="menu_item">Цены</li>
+                <li class="menu_item">Контакты</li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1 class="content_title">Професиональное наращивание ресниц в Минске</h1>
+            <ul class="list_about">
+                <li class="about_item">Качественные материалы</li>
+                <li class="about_item">Индивидуальный подход</li>
+                <li class="about_item">Моделирование взгляда</li>
+                <li class="about_item">Гарантия качества</li>
+                <li class="about_item">Приятные цены</li>
+            </ul>
+            <div class="garantie">
+                <h2 class="block_title">Почему именно мы</h2>
+
+                <div class="garantie_element">
+                    <h3 class="element_title">Качественные материалы</h3>
+                    <div class="element_image"></div>
+                    <p class="element_description">Мы используем качественные материалы, чтобы придать Вашим глазам естественный взгляд.</p>
+                </div>
+
+                <div class="garantie_element">
+                    <h3 class="element_title">Стерильные инструменты</h3>
+                    <div class="element_image"></div>
+                    <p class="element_description">Все инструменты проходят тщательную обработку антисептиком, чтобы не навредить Вашим глазам.</p>
+                </div>
+
+                <div class="garantie_element">
+                    <h3 class="element_title">Индивидуальный подход</h3>
+                    <div class="element_image"></div>
+                    <p class="element_description">Поможем выбрать подходящий именно Вам эффект, чтобы подчеркнуть естественную красоту и смоделировать взгляд.</p>
+                </div>
+
+                <p style="text-align: center; font-size: 14pt;">А еще</p>
+                <div class="comfort">
+                    <div class="comfort_element">
+                        <img src="images/cup.png" alt="" class="comfort_img">
+                        <p class="comfort_title">Чай / Кофе</p>
+                    </div>
+
+                    <div class="comfort_element">
+                        <img src="images/donut.png" alt="" class="comfort_img">
+                        <p class="comfort_title">Сладости</p>
+                    </div>
+
+                    <div class="comfort_element">
+                        <img src="images/wifi.png" alt="" class="comfort_img">
+                        <p class="comfort_title">Бесплатный Wi-Fi</p>
+                    </div>
+
+                    <div class="comfort_element">
+                        <img src="images/nota.png" alt="" class="comfort_img">
+                        <p class="comfort_title">Приятная музыка</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
 </body>
 </html>
